@@ -1,0 +1,93 @@
+.footer
+  background-color: #242640
+  span
+    display: flex
+    align-items: center
+    // justify-content: center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  &__title
+    font-size: 32px
+    font-weight: 900
+    color: #fff
+    padding-top: 64px
+    padding-bottom: 14px
+
+  &__line
+    display: flex
+    flex-wrap: wrap
+    opacity: 0.5
+    font-size: 16px
+    color: #fff
+    @media screen and (max-width: 460px)
+      display: inline-flex
+      flex-direction: column
+      // align-content: left
+      // justify-content: left
+      // span  
+      //   flex-basis: 100%
+      // align-content: left
+      // justify-content: left
+      // text-align: left
+    &--added-padding
+      padding: 23px 0 60px 0 !important
+      @media screen and (max-width: 460px)
+        display: inline-flex
+        flex-direction: column
+        align-content: left
+        justify-content: left
+        text-align: left
+
+  &__icon
+    &--location
+      padding: 0 13px 0 30px
+      @media screen and (max-width: 460px)
+        padding-left: 0 
+    &--phone
+      padding: 0 7px 0 25px
+      @media screen and (max-width: 460px)
+        padding-left: 0 
+    &--email
+      padding: 0 10px 0 50px
+      @media screen and (max-width: 460px)
+        padding-left: 0 
+    &--filler
+      display: inline
+      height: 5px !important
+      font-size: 5px
+      @media screen and (min-width: 461px)
+        display: none !important
+
+
+  &__divider
+    height: 0.5px
+    width: 100%
+    opacity: 0.2
+    background-color: #707070
+
+  &__container
+    // br
+    //   display: none
+    display: flex 
+    align-items: center
+    justify-content: center 
+    flex-direction: column
+    @media screen and (max-width: 460px)
+      display: inline-flex
+      align-items: flex-start
+      // justify-content: center
+      flex-direction: column
+      // justify-content: 
+      // br
+      //   display: inline-block !important
+
+  &__padding-when-breaking
+    @media screen and (max-width: 460px)
+      padding-bottom: 23px
+
+
+  
+    

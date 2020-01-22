@@ -1,9 +1,6 @@
 .footer
   background-color: #242640
   flex-direction: column
-  span
-    display: flex
-    align-items: center
 
   &__title
     font-size: 32px
@@ -11,17 +8,24 @@
     color: #fff
     padding-top: 64px
     padding-bottom: 14px
+    &:hover
+      color: #078da2
 
   &__line
     display: flex
     flex-wrap: wrap
-    opacity: 0.5
     font-size: 16px
     color: #fff
-    margin: 12px 0
     @media screen and (max-width: 460px)
       display: inline-flex
       flex-direction: column
+
+    &--lower-part
+      align-items: center
+      
+  &__newline-point
+    display: flex
+    align-items: center
 
   &__icon
     &--location
@@ -37,7 +41,7 @@
       @media screen and (max-width: 460px)
         padding-left: 0 
     &--filler
-      display: inline
+      display: inline-block
       height: 5px !important
       font-size: 5px
       @media screen and (min-width: 461px)
@@ -48,6 +52,8 @@
     width: 100%
     opacity: 0.2
     background-color: #707070
+    display: inline-block
+    margin: 0 auto
 
   &__container
     display: flex 
@@ -59,6 +65,11 @@
       align-items: flex-start
       flex-direction: column
 
-  &__padding-when-breaking
-    @media screen and (max-width: 460px)
-      padding-bottom: 23px
+  &__text
+    opacity: 0.5
+    &:hover
+      opacity: 1
+
+  &__hover-style:hover
+    .footer__text
+      opacity: 1

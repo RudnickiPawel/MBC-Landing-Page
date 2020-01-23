@@ -1,0 +1,59 @@
+.lower-wave {
+  position: relative;
+  width: 100%;
+}
+
+.lower-wave__background-container {
+  position: relative;
+  bottom: -1px;
+  z-index: -1;
+}
+
+.lower-wave__background {
+  height: 590px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  background-image: url("src/wave.png");
+}
+
+.lower-wave__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.lower-wave__text {
+  padding: 8px 0 42px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.lower-wave__title {
+  padding-top: 258px;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.lower-wave__title br {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
+  .lower-wave__title {
+    text-align: center;
+  }
+  .lower-wave__title br {
+    display: initial;
+  }
+}
+
+.lower-wave__app-button {
+  margin-bottom: 137px;
+}

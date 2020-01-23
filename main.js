@@ -23,5 +23,4 @@ $(document).ready(function () {
       return attr.replace("_hovered.png", ".png");
     });
   });
-
 });

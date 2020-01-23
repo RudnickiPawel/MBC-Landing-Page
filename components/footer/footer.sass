@@ -29,7 +29,6 @@
         display: inline-flex
         flex-direction: column
         
-      
   &__newline-point
     display: flex
     align-items: center
@@ -43,28 +42,29 @@
 
   &__icon
     &--location
-      padding: 0 13px 0 30px
+      margin: 0 13px 0 30px
       @media screen and (max-width: 460px)
-        padding-left: 0 
+        margin-left: 0 
     &--phone
-      padding: 0 7px 0 25px
+      margin: 0 7px 0 25px
       @media screen and (max-width: 460px)
-        padding-left: 0 
+        margin-left: 0 
     &--email
-      padding: 0 10px 0 50px
+      margin: 0 10px 0 50px
       @media screen and (max-width: 460px)
-        padding-left: 0 
+        margin-left: 0 
     &--filler
       display: inline-block
       height: 5px !important
       font-size: 5px
       @media screen and (min-width: 461px)
         display: none !important
-    &--facebook, &--youtube, &--twitter
-      padding-right: 42px
-      @media screen and ( max-width: 1050px)
-        padding-right: 10px
         
+  &__padding-right
+    margin-right: 42px
+    @media screen and ( max-width: 1050px)
+      margin-right: 10px
+
   &__divider
     height: 0.5px
     width: 100%
@@ -93,7 +93,6 @@
         align-items: flex-start
         flex-direction: column
         
-
   &__text
     opacity: 0.5
     &:hover

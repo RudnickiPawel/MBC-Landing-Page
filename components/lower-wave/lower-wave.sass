@@ -1,0 +1,40 @@
+.lower-wave
+  position: relative
+  width: 100%
+
+  &__background-container
+    position: relative
+    bottom: -1px
+    z-index: -1
+
+  &__background
+    height: 590px
+    width: 100%
+    position: absolute
+    bottom: -1px
+    z-index: -1
+    background-image: url('src/wave.png')
+
+  &__container
+    display: flex
+    flex-direction: column
+    color: #fff
+
+  &__text
+    padding: 8px 0 42px
+    font-size: 24px
+    font-weight: 300
+
+  &__title
+    padding-top: 258px
+    font-size: 38px
+    font-weight: 900
+    br
+      display: none
+    @media screen and ( max-width: 460px )
+      text-align: center
+      br
+        display: initial
+      
+  &__app-button
+    margin-bottom: 137px

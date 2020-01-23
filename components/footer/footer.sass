@@ -20,12 +20,26 @@
       display: inline-flex
       flex-direction: column
 
-    &--lower-part
+    &--lower-footer
+      padding: 36px 0 30px 0
       align-items: center
+      justify-content: space-between
+      width: 100%
+      @media screen and ( max-width: 850px )
+        display: inline-flex
+        flex-direction: column
+        
       
   &__newline-point
     display: flex
     align-items: center
+  &__space-below23
+    padding-bottom: 23px
+    &--on-mobile
+      @media screen and ( max-width: 460px ) 
+        padding-bottom: 23px
+  &__space-below65
+    padding-bottom: 65px
 
   &__icon
     &--location
@@ -46,7 +60,11 @@
       font-size: 5px
       @media screen and (min-width: 461px)
         display: none !important
-
+    &--facebook, &--youtube, &--twitter
+      padding-right: 42px
+      @media screen and ( max-width: 1050px)
+        padding-right: 10px
+        
   &__divider
     height: 0.5px
     width: 100%
@@ -64,12 +82,42 @@
       display: inline-flex
       align-items: flex-start
       flex-direction: column
+    &--width100
+      display: flex 
+      align-items: center
+      justify-content: between
+      flex-direction: column
+      width: 100%
+      @media screen and (max-width: 460px)
+        display: inline-flex
+        align-items: flex-start
+        flex-direction: column
+        
 
   &__text
     opacity: 0.5
     &:hover
       opacity: 1
 
-  &__hover-style:hover
+  &__img-hover-style:hover
     .footer__text
       opacity: 1
+
+  &__icon-container
+    padding-right: 121px
+    @media screen and ( max-width: 850px )
+      padding: 0
+      
+  &__text--lower-footer
+    position: relative
+    left: 80px
+    br
+      display: none
+    @media (min-width: 851px) and ( max-width: 1050px )
+      left: 32px
+    @media screen and ( max-width: 850px )
+      position: static
+      padding: 20px 0
+    @media screen and ( max-width: 325px )
+      br
+        display: initial

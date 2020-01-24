@@ -1,19 +1,157 @@
 .app-preview
+  display: flex
+  margin: 130px 0 100px
 
-  &__slick-items
+  &__container
+    display: flex
+    @media (min-width: 861px) and ( max-width: 1100px )
+      justify-content: center
+      align-items: center
+    @media screen and ( max-width: 860px )
+      flex-direction: column
 
-  &__slick-item
+  &__img-container
+    flex: 1
+    order: 1
+    display: flex
+    justify-content: center
+    @media screen and ( max-width: 1100px )
+      flex: 0
 
-  &__slick-phone-image 
+  &__additional-container
+    display: flex
+    flex-direction: column
+    width: fit-content
+    flex: 1
+    order: 2
+    @media screen and ( max-width: 1100px )
+      flex: 0
+    @media screen and ( max-width: 860px )
+      justify-content: center
+      align-items: center
 
-  &__slick-icon
-
-  &__bolded-slick-text
-
-  &__slick-text
+  &__img 
+    align-self: center
+    @media screen and ( max-width: 340px )
+      width: 100%
+      height: auto
 
   &__title
+    display: inline
+    width: fit-content
+    font-size: 38px
+    font-weight: 900
+    margin-bottom: 8px
+    text-align: center
 
-  &__text
+  &__note
+    display: inline
+    width: fit-content
+    font-size: 24px
+    font-weight: 300
+    color: #969696
+    margin-bottom: 60px
+    @media screen and ( max-width: 340px )
+      text-align: center
 
   &__nav
+    display: inline-flex
+    width: fit-content
+    margin-bottom: 52px
+    @media screen and ( max-width: 480px )
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+     
+  #app-preview__link1
+    padding-right: 25px
+    padding-left: 27px
+  #app-preview__link2
+    padding-right: 19px
+    padding-left: 40px
+  #app-preview__link3
+    padding-right: 19px
+    padding-left: 19px
+  #app-preview__link4
+    padding-right: 11px
+    padding-left: 19px
+  #app-preview__link1, #app-preview__link2, #app-preview__link3, #app-preview__link4
+    @media (min-width: 331px) and ( max-width: 480px )
+      flex: 1
+      padding-left: 0
+      padding-right: 0
+    @media screen and ( max-width: 330px )
+      flex: 0
+      padding-left: 3px
+      padding-right: 3px
+
+  &__links
+    position: relative
+    font-size: 14px
+    font-weight: 900
+    letter-spacing: 1.23px
+    color: #557dc9
+    opacity: 0.4
+    padding-bottom: 13px
+    border-bottom: solid 1px gray 
+    text-align: center
+    br
+      display: none
+    @media screen and ( max-width: 500px )
+      br
+        display: initial
+
+    &:hover
+      padding-bottom: 12px
+      margin-bottom: -1px //czary
+      border-bottom: solid 3px #557dc9
+      opacity: 1
+      
+  &__item
+    flex-wrap: wrap
+    animation: fadeEffect 1s
+    @keyframes fadeEffect     
+      from 
+        opacity: 0
+      to
+        opacity: 1
+
+  &__subitem-container
+    display: flex
+    margin-bottom: 44px
+    @media screen and ( max-width: 860px )
+      width: 100%
+      justify-content: center
+      align-items: center
+    @media screen and ( max-width: 340px )
+      flex-direction: column
+      text-align: center
+
+  &__icon
+    align-self: flex-start
+    position: relative
+    right: 15px
+    @media screen and ( max-width: 860px )
+      position: static
+    @media screen and ( max-width: 340px )
+      align-self: initial
+
+  &__item-text-container
+    max-width: 424px
+    position: relative
+    left: 27px
+    @media screen and ( max-width: 860px )
+      position: static
+
+  &__bolded-text
+    display: inline-flex
+    width: fit-content
+    font-size: 20px
+    font-weight: 900
+
+  &__text
+    display: inline-flex
+    width: fit-content
+    font-size: 16px
+    color: #969696

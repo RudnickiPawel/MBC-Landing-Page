@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="src/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="src/1.8.1//.css">
   <link rel="stylesheet" type='text/css' href="styles.css">
   <title>MBC Landing Page</title>
 </head>
@@ -14,59 +14,171 @@
 
   </div>
   <div class="app-preview">
-    <div class="app-preview__slick-items">
-      <div class="app-preview__slick-item">
-        <img class="app-preview__slick-phone-image" src="src/app-preview_slick1.png" alt="">
-        <img src="src/app-preview_slick1-icon1.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Sync nad Track</div>
-        <div class="app-preview__slick-text">The calendar component tracks appointments, side effects, treatment regimens  during and between appointments.</div>
-        <img src="src/app-preview_slick1-icon2.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Enhance Appointments</div>
-        <div class="app-preview__slick-text">Attach information you’ve collected or recorded to specific appointments so that at the time of appointment, you have an interface with a reminder of all the information you need to discuss with your care team.</div>
-        <img src="src/app-preview_slick1-icon3.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Inform Decisions</div>
-        <div class="app-preview__slick-text">By combining your goals, treatment, and side effects we  medical professionals to better customize treatment plans to your specific needs as a patient.</div>
+    <div class="app-preview__container">
+      <div class="app-preview__additional-container">
+        <div class="app-preview__title">Track, Learn and Schedule</div>
+        <div class="app-preview__note">Reflect on what makes you, you.</div>
+        <div class="app-preview__nav">
+          <span id="app-preview__link1" class="app-preview__links cursor-pointer"
+            onclick="displayTabItem(event, 'app-preview__item1')">MY<br> STORY</span>
+          <span id="app-preview__link2" class="app-preview__links cursor-pointer"
+            onclick="displayTabItem(event, 'app-preview__item2')">MY<br> SCHEDULE</span>
+          <span id="app-preview__link3" class="app-preview__links cursor-pointer"
+            onclick="displayTabItem(event, 'app-preview__item3')">MY<br> NOTES</span>
+          <span id="app-preview__link4" class="app-preview__links cursor-pointer"
+            onclick="displayTabItem(event, 'app-preview__item4')">MY<br> TREATMENTS</span>
+        </div>
+        <div class="app-preview__item app-preview__item1">
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon1.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Sync nad Track</div>
+              <div class="app-preview__text">The calendar component tracks appointments, side effects, treatment
+                regimens
+                during
+                and between appointments.</div>
+            </div>
+          </div> 
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon2.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Enhance Appointments</div>
+              <div class="app-preview__text">Attach information you’ve collected or recorded to specific appointments so
+                that
+                at
+                the time of appointment, you have an interface with a reminder of all the information you need to
+                discuss
+                with
+                your care team.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon3.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Inform Decisions</div>
+              <div class="app-preview__text">By combining your goals, treatment, and side effects we medical
+                professionals
+                to
+                better customize treatment plans to your specific needs as a patient.</div>
+            </div>
+          </div>
+        </div>
+        <div class="app-preview__item app-preview__item2">
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon2.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Enhance Appointments</div>
+              <div class="app-preview__text">Attach information you’ve collected or recorded to specific
+                appointments so
+                that
+                at
+                the time of appointment, you have an interface with a reminder of all the information you need to
+                discuss
+                with
+                your care team.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon1.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Sync nad Track</div>
+              <div class="app-preview__text">The calendar component tracks appointments, side effects, treatment
+                regimens
+                during
+                and between appointments.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon3.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Inform Decisions</div>
+              <div class="app-preview__text">By combining your goals, treatment, and side effects we medical
+                professionals
+                to
+                better customize treatment plans to your specific needs as a patient.</div>
+            </div>
+          </div>
+        </div>
+        <div class="app-preview__item app-preview__item3">
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon1.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Sync nad Track</div>
+              <div class="app-preview__text">The calendar component tracks appointments, side effects,
+                treatment regimens
+                during
+                and between appointments.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon3.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Inform Decisions</div>
+              <div class="app-preview__text">By combining your goals, treatment, and side effects we medical
+                professionals
+                to
+                better customize treatment plans to your specific needs as a patient.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon2.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Enhance Appointments</div>
+              <div class="app-preview__text">Attach information you’ve collected or recorded to specific
+                appointments so
+                that
+                at
+                the time of appointment, you have an interface with a reminder of all the information you
+                need to discuss
+                with
+                your care team.</div>
+            </div>
+          </div>
+        </div>
+        <div class="app-preview__item app-preview__item4">
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon2.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Enhance Appointments</div>
+              <div class="app-preview__text">Attach information you’ve collected or recorded to specific
+                appointments so
+                that
+                at
+                the time of appointment, you have an interface with a reminder of all the information
+                you need to discuss
+                with
+                your care team.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon3.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Inform Decisions</div>
+              <div class="app-preview__text">By combining your goals, treatment, and side effects we
+                medical professionals
+                to
+                better customize treatment plans to your specific needs as a patient.</div>
+            </div>
+          </div>
+          <div class="app-preview__subitem-container">
+            <img src="src/app-preview_1-icon1.png" alt="" class="app-preview__icon">
+            <div class="app-preview__item-text-container">
+              <div class="app-preview__bolded-text">Sync nad Track</div>
+              <div class="app-preview__text">The calendar component tracks appointments, side
+                effects, treatment regimens
+                during
+                and between appointments.</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="app-preview__slick-item">
-        <img class="app-preview__slick-phone-image"  src="src/app-preview_slick1.png" alt="">
-        <img src="src/app-preview_slick1-icon2.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Enhance Appointments</div>
-        <div class="app-preview__slick-text">Attach information you’ve collected or recorded to specific appointments so that at the time of appointment, you have an interface with a reminder of all the information you need to discuss with your care team.</div>
-        <img src="src/app-preview_slick1-icon1.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Sync nad Track</div>
-        <div class="app-preview__slick-text">The calendar component tracks appointments, side effects, treatment regimens  during and between appointments.</div>
-        <img src="src/app-preview_slick1-icon3.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Inform Decisions</div>
-        <div class="app-preview__slick-text">By combining your goals, treatment, and side effects we  medical professionals to better customize treatment plans to your specific needs as a patient.</div>
-      </div>
-      <div class="app-preview__slick-item">
-        <img class="app-preview__slick-phone-image"  src="src/app-preview_slick1.png" alt="">
-        <img src="src/app-preview_slick1-icon1.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Sync nad Track</div>
-        <div class="app-preview__slick-text">The calendar component tracks appointments, side effects, treatment regimens  during and between appointments.</div>
-        <img src="src/app-preview_slick1-icon3.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Inform Decisions</div>
-        <div class="app-preview__slick-text">By combining your goals, treatment, and side effects we  medical professionals to better customize treatment plans to your specific needs as a patient.</div>
-        <img src="src/app-preview_slick1-icon2.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Enhance Appointments</div>
-        <div class="app-preview__slick-text">Attach information you’ve collected or recorded to specific appointments so that at the time of appointment, you have an interface with a reminder of all the information you need to discuss with your care team.</div>
-      </div>
-      <div class="app-preview__slick-item">
-        <img class="app-preview__slick-phone-image"  src="src/app-preview_slick1.png" alt="">
-        <img src="src/app-preview_slick1-icon2.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Enhance Appointments</div>
-        <div class="app-preview__slick-text">Attach information you’ve collected or recorded to specific appointments so that at the time of appointment, you have an interface with a reminder of all the information you need to discuss with your care team.</div>
-        <img src="src/app-preview_slick1-icon3.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Inform Decisions</div>
-        <div class="app-preview__slick-text">By combining your goals, treatment, and side effects we  medical professionals to better customize treatment plans to your specific needs as a patient.</div>
-        <img src="src/app-preview_slick1-icon1.png" alt="" class="app-preview__slick-icon">
-        <div class="app-preview__bolded-slick-text">Sync nad Track</div>
-        <div class="app-preview__slick-text">The calendar component tracks appointments, side effects, treatment regimens  during and between appointments.</div>
+      <div class="app-preview__img-container">
+        <img class="app-preview__item app-preview__img app-preview__item1" src="src/app-preview_1.png" alt="">
+        <img class="app-preview__item app-preview__img app-preview__item2" src="src/app-preview_2.png" alt="">
+        <img class="app-preview__item app-preview__img app-preview__item3" src="src/app-preview_3.png" alt="">
+        <img class="app-preview__item app-preview__img app-preview__item4" src="src/app-preview_4.png" alt="">
       </div>
     </div>
-    <div class="app-preview__title">Track, Learn and Schedule</div>
-    <div class="app-preview__text">Reflect on what makes you, you.</div>
-    <div class="app-preview__nav"></div>
   </div>
   <div class="lower-wave">
     <div class="lower-wave__background"></div>
@@ -110,7 +222,8 @@
     <div class="footer__container--width100">
       <div class="footer__line footer__line--lower-footer">
         <img class="logo--footer" src="src/logo.png" alt="">
-        <span class="footer__text  footer__text--lower-footer">Copyright © 2019 SHARE.<br> All rights reserved.</span>
+        <span class="footer__text  footer__text--lower-footer">Copyright © 2019 SHARE.<br> All
+          rights reserved.</span>
         <div class="footer__icon-container">
           <a class="footer__padding-right" href="https://facebook.com"><img
               class="footer__icon--facebook img-hover-swap cursor-pointer" src="src/footer_facebook.png" alt=""></a>
@@ -127,7 +240,7 @@
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="src/slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="src/1.8.1//.min.js"></script>
   <script type="text/javascript" src="./main.js"></script>
 </body>
 

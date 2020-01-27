@@ -227,6 +227,13 @@
   opacity: 1;
 }
 
+.app-preview__active-link {
+  padding-bottom: 12px;
+  margin-bottom: -1px;
+  border-bottom: solid 3px #557dc9;
+  opacity: 1;
+}
+
 .app-preview__item {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

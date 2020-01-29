@@ -1002,6 +1002,39 @@
   }
 }
 
+.welcome {
+  margin-top: 33px;
+  text-align: center;
+  margin: 0 5%;
+}
+
+.welcome__title {
+  font-size: 38px;
+  font-weight: 900;
+  color: #2f2f2f;
+}
+
+.welcome__note {
+  font-size: 26px;
+  font-weight: 300;
+  color: #969696;
+  margin: 11px 0 23px;
+}
+
+.welcome__text {
+  font-size: 20px;
+  color: #6e6e6e;
+  max-width: 1005px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.welcome__logo {
+  width: 174px;
+  height: 36px;
+  margin-bottom: 64px;
+}
+
 body {
   padding: 0;
   margin: 0;

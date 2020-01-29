@@ -4,6 +4,12 @@
   margin: 0 5%;
 }
 
+.welcome__icon {
+  height: 97px;
+  width: 97px;
+  margin-bottom: 33px;
+}
+
 .welcome__title {
   font-size: 38px;
   font-weight: 900;

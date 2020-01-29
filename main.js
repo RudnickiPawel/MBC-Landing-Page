@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
   //swap images when hovered
+  $('.header__download-app').hover(function() {
+    var img = $(this);
+    $(img).attr('src', function (index, attr) {
+      return attr.replace('.png', '_hovered.png');
+    });
+  }, function () {
+    var img = $(this);
+    $(img).attr('src', function (index, attr) {
+      return attr.replace('_hovered.png', '.png');
+    });
+  });
+
   $('.footer__img-hover-style').hover(function () {
     var img = $(this).find('img')[0];
     if (img != undefined) {

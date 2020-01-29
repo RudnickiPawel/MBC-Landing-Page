@@ -1,17 +1,124 @@
 .header
-  
-  &__background
+  &__background-wrapper
+    position: relative
 
-    &-wrapper
+  &__background
+    position: absolute
+    top: 0
+    z-index: -1
+    width: 100%
+    height: auto
 
   &__nav
+    display: flex
+    align-items: center
+    color: #fff
+    padding-top: 22px
+    margin-left: 131px
+    margin-right: 229px   
+    margin-bottom: 35px
+    position: relative 
+    &-left
+      display: flex
+      align-items: center
+
+    &-title
+      font-size: 22px
+      font-weight: 900
+      
+    &-right
+      display: inline-flex
+      position: absolute
+      right: 0
+
+    &-category
+      font-size: 13px
+      font-weight: 900
+      cursor: pointer
+      &:hover
+        color: #000
+
+      &--who
+        margin-left: 50px
+        margin-right: 53px
+      &--features
+        margin-right: 47px
+      &--app
+        margin-right: 54px
+  &__icon
+    width: 40px
+    height: 40px
 
   &__container
+    margin: 0 223px
+    color: #fff
+    display: flex
+    justify-content: space-between
 
   &__content
+    max-width: 497px
+    margin-top: 89px
+    &-title
+      font-size: 48px
+      font-weight: 900
+
+  &__phone-number
+    border-radius: 25px
+    border: solid 1px #d0d7dd
+    background-color: #fff
+    max-width: 491px
+    margin: 60px 0 35px
+    display: flex
+    height: 50px
+    align-items: center
+    // display: inline-block
+
+  &__placeholder
+    width: 70%
+    font-size: 18px
+    text-align: left
+    color: rgba(16, 16, 16, 0.39)
+    padding-left: 18px
+    &:hover
+      cursor: text
+
+  &__send-button
+    width: 30%
+    font-size: 18px
+    letter-spacing: -0.5px
+    text-align: center
+    color: #fff
+    height: 44px
+    border-radius: 22px
+    background-color: #43b8d1
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 4px
+    &:hover
+      background-color: #000
+      color: #fff
+
+
+  &__info
+    font-size: 12px
+    letter-spacing: -0.33px
+    text-align: left
+    max-width: 300px
+    margin-bottom: 39px
+
+  &__terms
+    font-weight: 900
+    color: #c4ede4
+
+  &__download-app
+    width: 128px
+    height: 40px
+    &:hover
+      cursor: pointer
 
   &__images-container
 
-  &__icon
+  &__phone-image
 
   &__modal

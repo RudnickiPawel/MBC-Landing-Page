@@ -5,10 +5,18 @@
   margin: 90px 0 100px;
 }
 
+@media screen and (max-width: 550px) {
+  .app-preview {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
 .app-preview__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 @media (min-width: 861px) and (max-width: 1100px) {

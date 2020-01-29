@@ -11,7 +11,7 @@
     background-image: url('src/who_background.png')
     background-repeat: no-repeat
     background-size: cover
-    z-index: -1
+    z-index: 0
     @media (min-width: 1091px) and (max-width: 1440px)
       flex: 0
     @media screen and (max-width: 1090px)
@@ -42,8 +42,9 @@
     width: 267px
     height: auto
     margin: 25px 0
-    position: relative
-    right: 5px
+    // position: relative
+    z-index: 1000
+    // right: 5px
     @media screen and (max-width: 1090px)
       padding: 0
 
@@ -72,9 +73,13 @@
     display: inline-block
     max-width: 163px
     margin-bottom: 64px
+    cursor: pointer
+    &:hover
+      background-color: #ffccff
+      color: white
+      
     @media screen and (max-width: 1090px)
       margin-left: 0
-    &:hover
 
   &__image-container
     width: 842px
@@ -95,5 +100,3 @@
     @media screen and (max-width: 1090px)
       width: 100%
       height: auto
-   
-    //obrazek ma zajmowac taka sama wysokosc i stopniowo pokazywac coraz mniej bokow

@@ -848,7 +848,7 @@
   background-image: url("src/who_background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 @media (min-width: 1091px) and (max-width: 1440px) {
@@ -909,8 +909,7 @@
   width: 267px;
   height: auto;
   margin: 25px 0;
-  position: relative;
-  right: 5px;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 1090px) {
@@ -953,6 +952,12 @@
   display: inline-block;
   max-width: 163px;
   margin-bottom: 64px;
+  cursor: pointer;
+}
+
+.who__button:hover {
+  background-color: #ffccff;
+  color: white;
 }
 
 @media screen and (max-width: 1090px) {

@@ -74,16 +74,19 @@
     // display: inline-block
 
   &__placeholder
-    width: 70%
+    width: 68%
     font-size: 18px
     text-align: left
     color: rgba(16, 16, 16, 0.39)
-    padding-left: 18px
-    &:hover
-      cursor: text
+    margin-left: 18px
+    height: 95%
+    border: none
+    &:focus
+      outline: none
+    
 
   &__send-button
-    width: 30%
+    width: 32%
     font-size: 18px
     letter-spacing: -0.5px
     text-align: center
@@ -95,9 +98,11 @@
     align-items: center
     justify-content: center
     margin-right: 4px
+    text-decoration: none
     &:hover
       background-color: #000
       color: #fff
+      font-weight: 900
 
 
   &__info
@@ -110,6 +115,9 @@
   &__terms
     font-weight: 900
     color: #c4ede4
+    text-decoration: none
+    &:hover
+      color: #000
 
   &__download-app
     width: 128px

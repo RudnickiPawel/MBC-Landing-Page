@@ -133,19 +133,21 @@
 }
 
 .header__placeholder {
-  width: 70%;
+  width: 68%;
   font-size: 18px;
   text-align: left;
   color: rgba(16, 16, 16, 0.39);
-  padding-left: 18px;
+  margin-left: 18px;
+  height: 95%;
+  border: none;
 }
 
-.header__placeholder:hover {
-  cursor: text;
+.header__placeholder:focus {
+  outline: none;
 }
 
 .header__send-button {
-  width: 30%;
+  width: 32%;
   font-size: 18px;
   letter-spacing: -0.5px;
   text-align: center;
@@ -163,11 +165,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 4px;
+  text-decoration: none;
 }
 
 .header__send-button:hover {
   background-color: #000;
   color: #fff;
+  font-weight: 900;
 }
 
 .header__info {
@@ -181,6 +185,11 @@
 .header__terms {
   font-weight: 900;
   color: #c4ede4;
+  text-decoration: none;
+}
+
+.header__terms:hover {
+  color: #000;
 }
 
 .header__download-app {

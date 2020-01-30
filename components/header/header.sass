@@ -1,13 +1,10 @@
 .header
-  &__background-wrapper
-    position: relative
-
-  &__background
-    position: absolute
-    top: 0
-    z-index: -1
+  display: flex
+  background-image: url('src/header_background.png')
+  background-repeat: no-repeat
+  z-index: 0
+  &__content-wrapper
     width: 100%
-    height: auto
 
   &__nav
     display: flex
@@ -18,18 +15,32 @@
     margin-right: 229px   
     margin-bottom: 35px
     position: relative 
+    @media (min-width: 851px) and ( max-width: 1210px )
+      margin-left: 60px
+      margin-right: 110px
+    @media screen and ( max-width: 850px )
+      flex-direction: column
+      margin: 0
+      
+      
     &-left
       display: flex
       align-items: center
+      @media screen and ( max-width: 850px )
+        margin-bottom: 22px
 
     &-title
       font-size: 22px
       font-weight: 900
+        
       
     &-right
       display: inline-flex
       position: absolute
       right: 0
+      @media screen and ( max-width: 850px )
+        position: static
+        flex-direction: column
 
     &-category
       font-size: 13px
@@ -41,10 +52,22 @@
       &--who
         margin-left: 50px
         margin-right: 53px
+        @media (min-width: 851px) and ( max-width: 1100px )
+          margin: 0 20px
+        @media screen and ( max-width: 850px )
+          margin: 5px 0
       &--features
         margin-right: 47px
+        @media (min-width: 851px) and ( max-width: 1100px )
+          margin-right: 20px
+        @media screen and ( max-width: 850px )
+          margin: 5px 0 
       &--app
         margin-right: 54px
+        @media (min-width: 851px) and ( max-width: 1100px )
+          margin-right: 20px
+        @media screen and ( max-width: 850px )
+          margin: 5px 0 
   &__icon
     width: 40px
     height: 40px
@@ -54,14 +77,30 @@
     color: #fff
     display: flex
     justify-content: space-between
+    @media (min-width: 911px) and ( max-width: 1210px )
+      margin: 0 100px
+    @media screen and ( max-width: 910px )
+      margin: 0
+      flex-direction: column
+      align-items: center
+      
 
   &__content
     flex: 1
     max-width: 497px
     margin-top: 89px
+    @media screen and ( max-width: 910px )
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 30px
     &-title
       font-size: 48px
       font-weight: 900
+      @media screen and ( max-width: 850px )
+        font-size: 24px
+        text-align: center
+        max-width: 320px
 
   &__phone-number
     border-radius: 25px
@@ -72,6 +111,11 @@
     display: flex
     height: 50px
     align-items: center
+    @media (min-width: 851px) and ( max-width: 910px )
+      width: 100%
+    @media screen and ( max-width: 850px )
+      margin: 30px 0
+      max-width: 320px
 
   &__placeholder
     width: 68%
@@ -109,6 +153,9 @@
     text-align: left
     max-width: 300px
     margin-bottom: 39px
+    @media screen and ( max-width: 850px )
+      text-align: center
+      margin-bottom: 30px
 
   &__terms
     font-weight: 900
@@ -120,13 +167,17 @@
   &__download-app
     width: 128px
     height: 40px
+    @media screen and ( max-width: 910px )
+      margin-bottom: 30px
 
   &__images-container
     max-width: 362px
+    @media screen and ( max-width: 365px )
+      width: 100%
     .slick-arrow
-      display: none !important
+      display: none !important  
 
   &__phone-image
-    //
+    margin-bottom: 58px
 
   &__modal

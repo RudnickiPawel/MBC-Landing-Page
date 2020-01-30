@@ -1,7 +1,15 @@
 .welcome {
-  margin-top: 33px;
   text-align: center;
   margin: 0 5%;
+  position: relative;
+  bottom: 75px;
+}
+
+@media screen and (max-width: 1260px) {
+  .welcome {
+    position: static;
+    margin-top: 35px;
+  }
 }
 
 .welcome__icon {
@@ -34,5 +42,10 @@
 .welcome__logo {
   width: 174px;
   height: 36px;
-  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1260px) {
+  .welcome__logo {
+    margin-bottom: 64px;
+  }
 }

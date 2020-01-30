@@ -4,7 +4,8 @@ $(document).ready(function () {
     $('.header__images-container').slick({
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 2000,
+      speed: 1000
     });
   //jquery way of scrollIntoView
     $('.header__nav-category--welcome').click(function() {
@@ -108,5 +109,4 @@ function removeActiveFromAll() {
   $('.app-preview__links').removeClass("app-preview__active-link")
 }
 
-//TODO: Making header responsive
-//      Finish Contact Modal
+//TODO: Finish Contact Modal

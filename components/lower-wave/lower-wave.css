@@ -48,6 +48,7 @@
 @media screen and (max-width: 460px) {
   .lower-wave__title {
     text-align: center;
+    padding-top: 70px;
   }
   .lower-wave__title br {
     display: initial;

@@ -1,16 +1,30 @@
 .modal {
-  position: absolute;
-  top: calc(50% - 333px);
+  position: fixed;
+  top: calc(50% - 302px);
   left: calc(50% - 260.5px);
   width: 100%;
   max-width: 521px;
   color: #fff;
   text-align: center;
-  border: 1px solid #000;
   border-radius: 8px;
   overflow: hidden;
   z-index: 100;
   display: none;
+}
+
+@media screen and (max-width: 525px) {
+  .modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-height: 605px) {
+  .modal {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .modal__top-container {
@@ -60,7 +74,6 @@
 .modal__name, .modal__email, .modal__message {
   width: 100%;
   max-width: 350px;
-  padding: 0;
   margin: 0;
   font-size: 16px;
   font-family: Lato;
@@ -69,6 +82,20 @@
   border: solid 1px #c3c3c3;
   color: #cccccc;
   padding: 12px 20px;
+}
+
+@media screen and (max-width: 525px) {
+  .modal__name, .modal__email, .modal__message {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .modal__name, .modal__email, .modal__message {
+    width: 100%;
+  }
 }
 
 .modal__name:focus, .modal__email:focus, .modal__message:focus {
@@ -84,6 +111,13 @@
 .modal__message {
   resize: none;
   margin-bottom: 101px;
+  max-height: 130px;
+}
+
+@media screen and (max-width: 525px) {
+  .modal__message {
+    margin-bottom: 19px;
+  }
 }
 
 .modal__btn-send {
@@ -103,6 +137,24 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 525px) {
+  .modal__btn-send {
+    position: static;
+    margin-bottom: 19px;
+  }
+}
+
 .modal__btn-send:hover {
   background-color: #000;
+}
+
+.modal__blur {
+  display: none;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  height: inherit;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.7;
 }

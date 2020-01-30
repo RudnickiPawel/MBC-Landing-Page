@@ -1,17 +1,14 @@
 $(document).ready(function () {
-    var isModalOn = false;
-
   //hiding modal when cross clicked
     $('.modal__close').click(function() {
       $('.modal')[0].style.display = 'none';
-      isModalOn = false;
-      toggleScrolling(isModalOn);
+
+      $('.modal__blur')[0].style.display = "none";
     });
   //showing modal when CONTACT on header nav clicked
     $('.header__nav-category--contact').click(function() {
       $('.modal')[0].style.display = 'block';
-      isModalOn = true;
-      toggleScrolling(isModalOn);
+      $('.modal__blur')[0].style.display = "block";
     });
 
   //adding slick carousel to header phone images
@@ -130,18 +127,8 @@ function displayTabItem(event, content_class) {
     content_to_display[i].style.display = "flex";
   event.currentTarget.className += " active";
 }
-//blocking scrolling on page when modal is on
-function toggleScrolling(isModalOn) {
-  if(isModalOn == true){
-    $("body").css({"overflow":"hidden"});
-  }
-  else
-    $("body").css({"overflow":"visible"});
-}
 
 //removing active class from links in app-preview
 function removeActiveFromAll() {
   $('.app-preview__links').removeClass("app-preview__active-link")
 }
-
-//TODO: Finish Contact Modal

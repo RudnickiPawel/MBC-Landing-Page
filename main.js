@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+  //adding slick carousel to header phone images
+    $('.header__images-container').slick({
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
   //jquery way of scrollIntoView
     $('.header__nav-category--welcome').click(function() {
       $('body,html').animate(
@@ -101,6 +108,5 @@ function removeActiveFromAll() {
   $('.app-preview__links').removeClass("app-preview__active-link")
 }
 
-//TODO: jquery way of scrollIntoView on nav-links in header
-//      Making header responsive
+//TODO: Making header responsive
 //      Finish Contact Modal

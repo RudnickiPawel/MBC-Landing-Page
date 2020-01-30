@@ -108,6 +108,9 @@
 }
 
 .header__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 497px;
   margin-top: 89px;
 }
@@ -195,6 +198,14 @@
 .header__download-app {
   width: 128px;
   height: 40px;
+}
+
+.header__images-container {
+  max-width: 362px;
+}
+
+.header__images-container .slick-arrow {
+  display: none !important;
 }
 
 .footer {

@@ -1,7 +1,7 @@
 .modal {
   position: absolute;
-  top: 0;
-  left: 25%;
+  top: calc(50% - 333px);
+  left: calc(50% - 260.5px);
   width: 100%;
   max-width: 521px;
   color: #fff;
@@ -9,6 +9,8 @@
   border: 1px solid #000;
   border-radius: 8px;
   overflow: hidden;
+  z-index: 100;
+  display: none;
 }
 
 .modal__top-container {

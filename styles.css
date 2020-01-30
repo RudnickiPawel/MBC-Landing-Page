@@ -197,10 +197,6 @@
   height: 40px;
 }
 
-.header__download-app:hover {
-  cursor: pointer;
-}
-
 .footer {
   background-color: #242640;
   -webkit-box-orient: vertical;
@@ -1091,7 +1087,9 @@
   width: 267px;
   height: auto;
   margin: 25px 0;
+  position: relative;
   z-index: 1000;
+  right: 5px;
 }
 
 @media screen and (max-width: 1090px) {
@@ -1134,7 +1132,7 @@
   display: inline-block;
   max-width: 163px;
   margin-bottom: 64px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .who__button:hover {

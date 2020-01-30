@@ -1,4 +1,37 @@
 $(document).ready(function () {
+  //jquery way of scrollIntoView
+    $('.header__nav-category--welcome').click(function() {
+      $('body,html').animate(
+        {
+          scrollTop: $(".welcome").offset().top
+        },
+        800
+      );
+    });
+    $('.header__nav-category--who').click(function() {
+      $('body,html').animate(
+        {
+          scrollTop: $(".who").offset().top
+        },
+        800
+      );
+    });
+    $('.header__nav-category--features').click(function() {
+      $('body,html').animate(
+        {
+          scrollTop: $(".features").offset().top
+        },
+        800
+      );
+    });
+    $('.header__nav-category--app').click(function() {
+      $('body,html').animate(
+        {
+          scrollTop: $(".app-preview").offset().top
+        },
+        800
+      );
+    });
 
   //swap images when hovered
   $('.header__download-app').hover(function() {
@@ -67,3 +100,7 @@ function displayTabItem(event, content_class) {
 function removeActiveFromAll() {
   $('.app-preview__links').removeClass("app-preview__active-link")
 }
+
+//TODO: jquery way of scrollIntoView on nav-links in header
+//      Making header responsive
+//      Finish Contact Modal

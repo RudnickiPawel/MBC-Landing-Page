@@ -1399,6 +1399,113 @@
   }
 }
 
+.modal {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 100%;
+  max-width: 521px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal__top-container {
+  background-image: linear-gradient(109deg, #078da2 -14%, #cebbe3 100%);
+}
+
+.modal__close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 47px 0 19px;
+}
+
+.modal__note {
+  font-size: 16px;
+  max-width: 381px;
+  margin: 0 auto;
+  padding-bottom: 31px;
+}
+
+.modal__bottom-container {
+  background-color: #fff;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 392px;
+  margin: 0 auto;
+}
+
+.modal__name, .modal__email, .modal__message {
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Lato;
+  margin-bottom: 19px;
+  border-radius: 2.5px;
+  border: solid 1px #c3c3c3;
+  color: #cccccc;
+  padding: 12px 20px;
+}
+
+.modal__name:focus, .modal__email:focus, .modal__message:focus {
+  outline: none;
+  border-color: #000;
+  color: #000;
+}
+
+.modal__name {
+  margin-top: 50px;
+}
+
+.modal__message {
+  resize: none;
+  margin-bottom: 101px;
+}
+
+.modal__btn-send {
+  font-family: Lato;
+  border: none;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 177px;
+  background-color: #557dc9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 13px 0 12px;
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+  cursor: pointer;
+}
+
+.modal__btn-send:hover {
+  background-color: #000;
+}
+
 body {
   padding: 0;
   margin: 0;

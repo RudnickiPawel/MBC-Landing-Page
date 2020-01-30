@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  //hiding modal when cross clicked
+    $('.modal__close').click(function() {
+      $('.modal')[0].style.display = 'none';
+    });
+  //showing modal when CONTACT on header nav clicked
+    $('.header__nav-category--contact').click(function() {
+      $('.modal')[0].style.display = 'block';
+    });
 
   //adding slick carousel to header phone images
     $('.header__images-container').slick({
@@ -42,6 +50,19 @@ $(document).ready(function () {
     });
 
   //swap images when hovered
+  $('.modal__close').hover(function() {
+    var img = $(this);
+    $(img).attr('src', function (index, attr) {
+      return attr.replace('.png', '_hovered.png');
+    });
+  }, function () {
+    var img = $(this);
+    $(img).attr('src', function (index, attr) {
+      return attr.replace('_hovered.png', '.png');
+    });
+  });
+
+
   $('.header__download-app').hover(function() {
     var img = $(this);
     $(img).attr('src', function (index, attr) {

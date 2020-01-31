@@ -36,6 +36,11 @@
   right: 16px;
   top: 16px;
   cursor: pointer;
+  stroke: #fff;
+}
+
+.modal__close:hover {
+  stroke: #000;
 }
 
 .modal__title {

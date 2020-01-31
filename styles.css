@@ -365,6 +365,10 @@
           flex-direction: column;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .footer__title {
   font-size: 32px;
   font-weight: 900;
@@ -443,6 +447,20 @@
 
 .footer__space-below65 {
   padding-bottom: 65px;
+}
+
+.footer__icon--location, .footer__icon--phone, .footer__icon--email {
+  stroke: #fff;
+  opacity: 0.5;
+  fill: transparent;
+}
+
+.footer__icon--facebook, .footer__icon--youtube, .footer__icon--twitter, .footer__icon--instagram {
+  fill: #fff;
+}
+
+.footer__icon--facebook:hover, .footer__icon--youtube:hover, .footer__icon--twitter:hover, .footer__icon--instagram:hover {
+  fill: #078da2;
 }
 
 .footer__icon--location {
@@ -577,7 +595,7 @@
   opacity: 1;
 }
 
-.footer__img-hover-style:hover .footer__text {
+.footer__img-hover-style:hover .footer__text, .footer__img-hover-style:hover .footer__icon--location, .footer__img-hover-style:hover .footer__icon--phone, .footer__img-hover-style:hover .footer__icon--email {
   opacity: 1;
 }
 
@@ -1438,6 +1456,11 @@
   right: 16px;
   top: 16px;
   cursor: pointer;
+  stroke: #fff;
+}
+
+.modal__close:hover {
+  stroke: #000;
 }
 
 .modal__title {

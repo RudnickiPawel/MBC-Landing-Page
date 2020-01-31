@@ -1,59 +1,60 @@
 $(document).ready(function () {
   //hiding modal when cross clicked
-    $('.modal__close').click(function() {
-      $('.modal')[0].style.display = 'none';
+  $('.modal__close').click(function () {
+    $('.modal')[0].style.display = 'none';
 
-      $('.modal__blur')[0].style.display = "none";
-    });
+    $('.modal__blur')[0].style.display = "none";
+  });
+
   //showing modal when CONTACT on header nav clicked
-    $('.header__nav-category--contact').click(function() {
-      $('.modal')[0].style.display = 'block';
-      $('.modal__blur')[0].style.display = "block";
-    });
+  $('.header__nav-category--contact').click(function () {
+    $('.modal')[0].style.display = 'block';
+    $('.modal__blur')[0].style.display = "block";
+  });
 
   //adding slick carousel to header phone images
-    $('.header__images-container').slick({
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 1000
-    });
+  $('.header__images-container').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000
+  });
   //jquery way of scrollIntoView
-    $('.header__nav-category--welcome').click(function() {
-      $('body,html').animate(
-        {
-          scrollTop: $(".welcome").offset().top
-        },
-        800
-      );
-    });
-    $('.header__nav-category--who').click(function() {
-      $('body,html').animate(
-        {
-          scrollTop: $(".who").offset().top
-        },
-        800
-      );
-    });
-    $('.header__nav-category--features').click(function() {
-      $('body,html').animate(
-        {
-          scrollTop: $(".features").offset().top
-        },
-        800
-      );
-    });
-    $('.header__nav-category--app').click(function() {
-      $('body,html').animate(
-        {
-          scrollTop: $(".app-preview").offset().top
-        },
-        800
-      );
-    });
+  $('.header__nav-category--welcome').click(function () {
+    $('body,html').animate(
+      {
+        scrollTop: $(".welcome").offset().top
+      },
+      800
+    );
+  });
+  $('.header__nav-category--who').click(function () {
+    $('body,html').animate(
+      {
+        scrollTop: $(".who").offset().top
+      },
+      800
+    );
+  });
+  $('.header__nav-category--features').click(function () {
+    $('body,html').animate(
+      {
+        scrollTop: $(".features").offset().top
+      },
+      800
+    );
+  });
+  $('.header__nav-category--app').click(function () {
+    $('body,html').animate(
+      {
+        scrollTop: $(".app-preview").offset().top
+      },
+      800
+    );
+  });
 
   //swap images when hovered
-  $('.modal__close').hover(function() {
+  $('.header__download-app').hover(function () {
     var img = $(this);
     $(img).attr('src', function (index, attr) {
       return attr.replace('.png', '_hovered.png');
@@ -65,43 +66,6 @@ $(document).ready(function () {
     });
   });
 
-
-  $('.header__download-app').hover(function() {
-    var img = $(this);
-    $(img).attr('src', function (index, attr) {
-      return attr.replace('.png', '_hovered.png');
-    });
-  }, function () {
-    var img = $(this);
-    $(img).attr('src', function (index, attr) {
-      return attr.replace('_hovered.png', '.png');
-    });
-  });
-
-  $('.footer__img-hover-style').hover(function () {
-    var img = $(this).find('img')[0];
-    if (img != undefined) {
-      $(img).attr("src", function (index, attr) {
-        return attr.replace(".png", "_hovered.png");
-      });
-    }
-  }, function () {
-    var img = $(this).find('img')[0];
-    if (img != undefined) {
-      $(img).attr("src", function (index, attr) {
-        return attr.replace("_hovered.png", ".png");
-      });
-    }
-  });
-  $('.img-hover-swap').hover(function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace(".png", "_hovered.png");
-    });
-  }, function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("_hovered.png", ".png");
-    });
-  });
   // app-preview opening default tab
   document.getElementById("app-preview__link1").click();
   //arranging active link

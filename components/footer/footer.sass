@@ -1,6 +1,8 @@
 .footer
   background-color: #242640
   flex-direction: column
+  a
+    text-decoration: none
 
   &__title
     font-size: 32px
@@ -41,6 +43,15 @@
     padding-bottom: 65px
 
   &__icon
+    &--location, &--phone, &--email 
+      stroke: #fff
+      opacity: 0.5
+      fill: transparent
+    &--facebook, &--youtube, &--twitter, &--instagram
+      fill: #fff
+      &:hover
+        fill: #078da2
+
     &--location
       margin: 0 13px 0 30px
       @media screen and (max-width: 460px)
@@ -59,7 +70,7 @@
       font-size: 5px
       @media screen and (min-width: 461px)
         display: none !important
-        
+
   &__padding-right
     margin-right: 42px
     @media screen and ( max-width: 1050px)
@@ -99,7 +110,7 @@
       opacity: 1
 
   &__img-hover-style:hover
-    .footer__text
+    .footer__text, .footer__icon--location, .footer__icon--phone, .footer__icon--email
       opacity: 1
 
   &__icon-container

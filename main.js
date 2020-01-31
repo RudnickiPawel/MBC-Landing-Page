@@ -6,7 +6,6 @@ $(document).ready(function () {
     $('.mod__blur')[0].style.display = "none";
   });
   $("body").click(function(event) {
-    console.log(event.target.className);
     if ((!event.target.className.includes("modal")) && (!event.target.className.includes("header__nav-category--contact"))){
       $(".modal")[0].style.display = 'none';
       $('.mod__blur')[0].style.display = "none";

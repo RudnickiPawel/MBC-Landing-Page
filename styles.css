@@ -1573,7 +1573,7 @@
   background-color: #000;
 }
 
-.modal__blur {
+.mod__blur {
   display: none;
   position: fixed;
   left: 0;

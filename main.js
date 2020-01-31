@@ -3,13 +3,20 @@ $(document).ready(function () {
   $('.modal__close').click(function () {
     $('.modal')[0].style.display = 'none';
 
-    $('.modal__blur')[0].style.display = "none";
+    $('.mod__blur')[0].style.display = "none";
   });
+  $("body").click(function(event) {
+    console.log(event.target.className);
+    if ((!event.target.className.includes("modal")) && (!event.target.className.includes("header__nav-category--contact"))){
+      $(".modal")[0].style.display = 'none';
+      $('.mod__blur')[0].style.display = "none";
+    }
+});
 
   //showing modal when CONTACT on header nav clicked
   $('.header__nav-category--contact').click(function () {
     $('.modal')[0].style.display = 'block';
-    $('.modal__blur')[0].style.display = "block";
+    $('.mod__blur')[0].style.display = "block";
   });
 
   //adding slick carousel to header phone images

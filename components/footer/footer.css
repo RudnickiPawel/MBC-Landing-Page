@@ -41,6 +41,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
   }
 }
 

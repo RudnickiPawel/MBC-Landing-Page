@@ -38,19 +38,6 @@ $(document).ready(function () {
     $('.mod__blur').css('display', 'block');
   });
 
-  //jquery way of scrollIntoView
-  // var categories = ['welcome', 'who', 'features', 'app'];
-  // for (var i = 0; i < categories.length; i++) {
-  //   $('.header__nav-category--' + categories[i]).on('click', function () {
-  //     $('body,html').animate(
-  //       {
-  //         scrollTop: $("." + categories[i]).offset().top
-  //       },
-  //       800
-  //     );
-  //   });
-  // }
-
   //swap images when hovered
   $('.header__download-app').hover(function () {
     var img = $(this);

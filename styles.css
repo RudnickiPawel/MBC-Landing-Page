@@ -709,6 +709,8 @@
 
 .lower-wave__app-button {
   margin-bottom: 137px;
+  width: inherit;
+  height: inherit;
 }
 
 .app {

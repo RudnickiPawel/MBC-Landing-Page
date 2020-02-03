@@ -5,7 +5,7 @@
   bottom: 75px;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 910px) {
   .welcome {
     position: static;
     margin-top: 35px;

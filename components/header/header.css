@@ -78,6 +78,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -328,10 +329,13 @@
   }
 }
 
-.header__images-container .slick-arrow {
-  display: none !important;
+.header__phone-image {
+  margin-bottom: 115px;
+  margin-left: auto;
 }
 
-.header__phone-image {
-  margin-bottom: 58px;
+@media screen and (max-width: 910px) {
+  .header__phone-image {
+    margin-bottom: 0;
+  }
 }

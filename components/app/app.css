@@ -1,4 +1,4 @@
-.app-preview {
+.app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,13 +6,13 @@
 }
 
 @media screen and (max-width: 550px) {
-  .app-preview {
+  .app {
     margin-left: 3%;
     margin-right: 3%;
   }
 }
 
-.app-preview__container {
+.app__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 861px) and (max-width: 1100px) {
-  .app-preview__container {
+  .app__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 @media screen and (max-width: 860px) {
-  .app-preview__container {
+  .app__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -39,7 +39,7 @@
   }
 }
 
-.app-preview__img-container {
+.app__img-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -55,14 +55,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .app-preview__img-container {
+  .app__img-container {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
   }
 }
 
-.app-preview__additional-container {
+.app__additional-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .app-preview__additional-container {
+  .app__additional-container {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 860px) {
-  .app-preview__additional-container {
+  .app__additional-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -100,20 +100,20 @@
   }
 }
 
-.app-preview__img {
+.app__img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 @media screen and (max-width: 340px) {
-  .app-preview__img {
+  .app__img {
     width: 100%;
     height: auto;
   }
 }
 
-.app-preview__title {
+.app__title {
   display: inline;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -124,7 +124,7 @@
   text-align: center;
 }
 
-.app-preview__note {
+.app__note {
   display: inline;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -136,12 +136,12 @@
 }
 
 @media screen and (max-width: 340px) {
-  .app-preview__note {
+  .app__note {
     text-align: center;
   }
 }
 
-.app-preview__nav {
+.app__nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -152,7 +152,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .app-preview__nav {
+  .app__nav {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166,28 +166,28 @@
   }
 }
 
-.app-preview #app-preview__link1 {
+.app #app__link1 {
   padding-right: 25px;
   padding-left: 27px;
 }
 
-.app-preview #app-preview__link2 {
+.app #app__link2 {
   padding-right: 19px;
   padding-left: 40px;
 }
 
-.app-preview #app-preview__link3 {
+.app #app__link3 {
   padding-right: 19px;
   padding-left: 19px;
 }
 
-.app-preview #app-preview__link4 {
+.app #app__link4 {
   padding-right: 11px;
   padding-left: 19px;
 }
 
 @media (min-width: 331px) and (max-width: 480px) {
-  .app-preview #app-preview__link1, .app-preview #app-preview__link2, .app-preview #app-preview__link3, .app-preview #app-preview__link4 {
+  .app #app__link1, .app #app__link2, .app #app__link3, .app #app__link4 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -197,7 +197,7 @@
 }
 
 @media screen and (max-width: 330px) {
-  .app-preview #app-preview__link1, .app-preview #app-preview__link2, .app-preview #app-preview__link3, .app-preview #app-preview__link4 {
+  .app #app__link1, .app #app__link2, .app #app__link3, .app #app__link4 {
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
@@ -206,7 +206,7 @@
   }
 }
 
-.app-preview__links {
+.app__links {
   position: relative;
   font-size: 14px;
   font-weight: 900;
@@ -218,31 +218,31 @@
   text-align: center;
 }
 
-.app-preview__links br {
+.app__links br {
   display: none;
 }
 
 @media screen and (max-width: 500px) {
-  .app-preview__links br {
+  .app__links br {
     display: initial;
   }
 }
 
-.app-preview__links:hover {
+.app__links:hover {
   padding-bottom: 12px;
   margin-bottom: -1px;
   border-bottom: solid 3px #557dc9;
   opacity: 1;
 }
 
-.app-preview__active-link {
+.app__active-link {
   padding-bottom: 12px;
   margin-bottom: -1px;
   border-bottom: solid 3px #557dc9;
   opacity: 1;
 }
 
-.app-preview__item {
+.app__item {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-animation: fadeEffect 1s;
@@ -267,7 +267,7 @@
   }
 }
 
-.app-preview__subitem-container {
+.app__subitem-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +275,7 @@
 }
 
 @media screen and (max-width: 860px) {
-  .app-preview__subitem-container {
+  .app__subitem-container {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -287,7 +287,7 @@
 }
 
 @media screen and (max-width: 340px) {
-  .app-preview__subitem-container {
+  .app__subitem-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -296,7 +296,7 @@
   }
 }
 
-.app-preview__icon {
+.app__icon {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
@@ -304,32 +304,32 @@
 }
 
 @media screen and (max-width: 860px) {
-  .app-preview__icon {
+  .app__icon {
     position: static;
   }
 }
 
 @media screen and (max-width: 340px) {
-  .app-preview__icon {
+  .app__icon {
     -ms-flex-item-align: initial;
         -ms-grid-row-align: initial;
         align-self: initial;
   }
 }
 
-.app-preview__item-text-container {
+.app__item-text-container {
   max-width: 424px;
   position: relative;
   left: 27px;
 }
 
 @media screen and (max-width: 860px) {
-  .app-preview__item-text-container {
+  .app__item-text-container {
     position: static;
   }
 }
 
-.app-preview__bolded-text {
+.app__bolded-text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -340,7 +340,7 @@
   font-weight: 900;
 }
 
-.app-preview__text {
+.app__text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

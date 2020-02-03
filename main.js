@@ -1,63 +1,44 @@
 $(document).ready(function () {
-  //hiding modal when cross clicked
-  $('.modal__close').click(function () {
-    $('.modal')[0].style.display = 'none';
-
-    $('.mod__blur')[0].style.display = "none";
-  });
-  $("body").click(function(event) {
-    if ((!event.target.className.includes("modal")) && (!event.target.className.includes("header__nav-category--contact"))){
-      $(".modal")[0].style.display = 'none';
-      $('.mod__blur')[0].style.display = "none";
-    }
-});
-
-  //showing modal when CONTACT on header nav clicked
-  $('.header__nav-category--contact').click(function () {
-    $('.modal')[0].style.display = 'block';
-    $('.mod__blur')[0].style.display = "block";
-  });
-
   //adding slick carousel to header phone images
   $('.header__images-container').slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    speed: 1000
+    speed: 1000,
+    arrows: false
   });
+
+  //hiding modal when cross clicked
+  $('.modal__close').click(function () {
+    $('.modal').css('display', 'none');
+
+    $('.mod__blur').css('display', 'none');
+  });
+  $("body").click(function (event) {
+    if ((!event.target.className.includes("modal")) && (!event.target.className.includes("header__nav-category--contact"))) {
+      $(".modal").css('display', 'none');
+      $('.mod__blur').css('display', 'none');
+    }
+  });
+
+  //showing modal when CONTACT on header nav clicked
+  $('.header__nav-category--contact').click(function () {
+    $('.modal').css('display', 'block');
+    $('.mod__blur').css('display', 'block');
+  });
+
   //jquery way of scrollIntoView
-  $('.header__nav-category--welcome').click(function () {
-    $('body,html').animate(
-      {
-        scrollTop: $(".welcome").offset().top
-      },
-      800
-    );
-  });
-  $('.header__nav-category--who').click(function () {
-    $('body,html').animate(
-      {
-        scrollTop: $(".who").offset().top
-      },
-      800
-    );
-  });
-  $('.header__nav-category--features').click(function () {
-    $('body,html').animate(
-      {
-        scrollTop: $(".features").offset().top
-      },
-      800
-    );
-  });
-  $('.header__nav-category--app').click(function () {
-    $('body,html').animate(
-      {
-        scrollTop: $(".app-preview").offset().top
-      },
-      800
-    );
-  });
+  var categories = ['welcome', 'who', 'features', 'app'];
+  for (var i = 0; i < categories.length; i++) {
+    $('.header__nav-category--' + categories[i]).on('click', function () {
+      $('body,html').animate(
+        {
+          scrollTop: $("." + categories[i]).offset().top
+        },
+        800
+      );
+    });
+  }
 
   //swap images when hovered
   $('.header__download-app').hover(function () {
@@ -72,33 +53,33 @@ $(document).ready(function () {
     });
   });
 
-  // app-preview opening default tab
-  document.getElementById("app-preview__link1").click();
   //arranging active link
-  $('.app-preview__links').click(function () {
+  $(".app__links").on('click', function () {
     removeActiveFromAll();
-    $(this).addClass("app-preview__active-link");
+    $(this).addClass("app__active-link");
   });
+  // app opening default tab
+  $("#app__link1").click();
 });
 
-// app-preview toggable tabs
+// app toggable tabs
 function displayTabItem(event, content_class) {
   var i, tabcontent, tablinks, content_to_display;
-  tabcontent = $('.app-preview__item');
+  tabcontent = $('.app__item');
   for (i = 0; i < tabcontent.length; i++)
-    tabcontent[i].style.display = "none";
+    $(tabcontent[i]).css('display', 'none');
 
-  tablinks = $('.app-preview__links');
+  tablinks = $('.app__links');
   for (i = 0; i < tablinks.length; i++)
     tablinks[i].className = tablinks[i].className.replace(" active", "");
 
   content_to_display = $('.' + content_class);
   for (i = 0; i < content_to_display.length; i++)
-    content_to_display[i].style.display = "flex";
+    $(content_to_display[i]).css('display', 'flex');
   event.currentTarget.className += " active";
 }
 
-//removing active class from links in app-preview
+//removing active class from links in app
 function removeActiveFromAll() {
-  $('.app-preview__links').removeClass("app-preview__active-link")
+  $('.app__links').removeClass("app__active-link")
 }

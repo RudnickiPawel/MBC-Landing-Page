@@ -3,6 +3,7 @@
   flex-direction: column
   a
     text-decoration: none
+    color: inherit
 
   &__title
     font-size: 32px
@@ -10,8 +11,6 @@
     color: #fff
     padding-top: 64px
     padding-bottom: 14px
-    &:hover
-      color: #078da2
 
   &__line
     display: flex
@@ -103,31 +102,29 @@
         display: inline-flex
         align-items: flex-start
         flex-direction: column
-        
+  &__img-hover-style
+    .footer__text--with-hover, .footer__icon--location, .footer__icon--phone, .footer__icon--email
+        opacity: 0.5
+    &:hover
+      .footer__text--with-hover, .footer__icon--location, .footer__icon--phone, .footer__icon--email
+        opacity: 1
   &__text
     opacity: 0.5
-    &:hover
-      opacity: 1
-
-  &__img-hover-style:hover
-    .footer__text, .footer__icon--location, .footer__icon--phone, .footer__icon--email
-      opacity: 1
+    &--lower-footer
+      position: relative
+      left: 80px
+      br
+        display: none
+      @media (min-width: 851px) and ( max-width: 1050px )
+        left: 32px
+      @media screen and ( max-width: 850px )
+        position: static
+        padding: 20px 0
+      @media screen and ( max-width: 325px )
+        br
+          display: initial
 
   &__icon-container
     padding-right: 121px
     @media screen and ( max-width: 850px )
       padding: 0
-      
-  &__text--lower-footer
-    position: relative
-    left: 80px
-    br
-      display: none
-    @media (min-width: 851px) and ( max-width: 1050px )
-      left: 32px
-    @media screen and ( max-width: 850px )
-      position: static
-      padding: 20px 0
-    @media screen and ( max-width: 325px )
-      br
-        display: initial

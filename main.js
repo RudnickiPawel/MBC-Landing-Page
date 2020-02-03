@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  //smooth scrolling using anchor
+  $('a[href^="#"]').on('click', function (event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+
   //adding slick carousel to header phone images
   $('.header__images-container').slick({
     infinite: true,
@@ -28,17 +39,17 @@ $(document).ready(function () {
   });
 
   //jquery way of scrollIntoView
-  var categories = ['welcome', 'who', 'features', 'app'];
-  for (var i = 0; i < categories.length; i++) {
-    $('.header__nav-category--' + categories[i]).on('click', function () {
-      $('body,html').animate(
-        {
-          scrollTop: $("." + categories[i]).offset().top
-        },
-        800
-      );
-    });
-  }
+  // var categories = ['welcome', 'who', 'features', 'app'];
+  // for (var i = 0; i < categories.length; i++) {
+  //   $('.header__nav-category--' + categories[i]).on('click', function () {
+  //     $('body,html').animate(
+  //       {
+  //         scrollTop: $("." + categories[i]).offset().top
+  //       },
+  //       800
+  //     );
+  //   });
+  // }
 
   //swap images when hovered
   $('.header__download-app').hover(function () {

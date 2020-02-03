@@ -27,6 +27,9 @@
       flex-wrap: wrap;
   font-size: 16px;
   color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 460px) {

@@ -59,6 +59,9 @@
     -webkit-box-flex: 0;
         -ms-flex: 0;
             flex: 0;
+    display: initial;
+    margin: 0 auto;
+    margin-bottom: 90px;
   }
 }
 
@@ -217,16 +220,9 @@
   padding-bottom: 13px;
   border-bottom: solid 1px gray;
   text-align: center;
-}
-
-.app__links br {
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-  .app__links br {
-    display: initial;
-  }
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .app__links:hover {

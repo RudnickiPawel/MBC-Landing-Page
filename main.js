@@ -21,21 +21,21 @@ $(document).ready(function () {
 
   //hiding modal when cross clicked
   $('.modal__close').click(function () {
-    $('.modal').css('display', 'none');
+    $('.modal').hide(200);
 
-    $('.mod__blur').css('display', 'none');
+    $('.mod__blur').hide(200);
   });
   $("body").click(function (event) {
     if ((!event.target.className.includes("modal")) && (!event.target.className.includes("header__nav-category--contact"))) {
-      $(".modal").css('display', 'none');
-      $('.mod__blur').css('display', 'none');
+      $(".modal").hide(200);
+      $('.mod__blur').hide(200);
     }
   });
 
   //showing modal when CONTACT on header nav clicked
   $('.header__nav-category--contact').click(function () {
-    $('.modal').css('display', 'block');
-    $('.mod__blur').css('display', 'block');
+    $('.modal').show(200);
+    $('.mod__blur').show(200);
   });
 
   //swap images when hovered
@@ -81,3 +81,6 @@ function displayTabItem(event, content_class) {
 function removeActiveFromAll() {
   $('.app__links').removeClass("app__active-link")
 }
+
+
+// TODO: sekcja app sie zle wyswietla na ipadzie

@@ -247,7 +247,7 @@
   text-align: left;
   color: rgba(16, 16, 16, 0.39);
   margin-left: 18px;
-  height: 95%;
+  height: 50%;
   border: none;
 }
 
@@ -275,6 +275,14 @@
           justify-content: center;
   margin-right: 4px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header__send-button {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .header__send-button:hover {

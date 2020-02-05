@@ -110,7 +110,7 @@
       align-self: center;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 480px) {
   .app__img {
     width: 100%;
     height: auto;
@@ -139,7 +139,7 @@
   margin-bottom: 60px;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 480px) {
   .app__note {
     text-align: center;
   }
@@ -246,6 +246,17 @@
           animation: fadeEffect 1s;
 }
 
+@media screen and (max-width: 1100px) {
+  .app__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @-webkit-keyframes fadeEffect {
   from {
     opacity: 0;
@@ -283,7 +294,7 @@
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 480px) {
   .app__subitem-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -304,7 +315,14 @@
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 550px) {
+  .app__icon {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .app__icon {
     -ms-flex-item-align: initial;
         -ms-grid-row-align: initial;
@@ -344,4 +362,10 @@
   width: fit-content;
   font-size: 16px;
   color: #969696;
+}
+
+@media screen and (max-width: 1100px) {
+  .app__text {
+    width: 90%;
+  }
 }
